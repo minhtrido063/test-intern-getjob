@@ -7,7 +7,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: #fff;
+    background: rgb(201, 189, 189);
 }
 
 *{
@@ -26,6 +26,10 @@ body{
     padding: 8px 30px;
     left: 20px;
     border-radius: 25px;
+}
+
+span{
+    padding-left: 10px;
 }
 
 .sidebar header {
@@ -85,7 +89,7 @@ body{
 }
 
 .nav_right h2{
-    margin-right: 60%;
+    margin-right: 79%;
     font-size: 20px;
 }
 
@@ -94,22 +98,133 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .nav_right ul li{
     list-style: none;
     margin-left: 20px;
 }
+
 .nav_right ul li a{
     color: #473b3b;
     text-decoration: none;
 }
+
 .nav_right ul li a i{
     font-size: 22px;
 }
+
 .nav_right ul li a img{
     background-size: cover;
-    border-radius: 50%;
+    border-radius: 40%;
     border: 0.5px solid yellow;
     height: 40px;
-    width: 40px;
+    width: 40px;  
+}
+
+section{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -10%;
+    width: 95%;
+    height: 68vh;
+    color: #000;
+    border-radius: 15px;
+}
+
+.wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    overflow: hidden;
+    height: inherit;
+}
+
+.form-wrapper{
+    padding: 20px;
+}
+
+.form-wrapper .title{
+    font-size: 21px;
+    color: #aaa7a7;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+
+.form-wrapper .map-form{
+    width: 100%;    
+}
+
+.form-wrapper .map-form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.form-wrapper .map-form .input_field label{
+    width: 200px;
+    color: #161414;
+    margin-right: 15px;
+    font-size: 14px;
+    
+}
+
+.wrapper .map-form .input_field .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid  #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .map-form .input_field .textarea {
+    width: 100%;
+    height:100%;
+    outline: none;
+    resize: none;
+    border: 1px solid  #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.wrapper .map-form .input_field .input_select{
+    position: relative;
+    width: 100%;
+    height: 37%;
+}
+
+.wrapper .map-form .input_field .input_select select{
+    border: 1px solid #d5dbd9;
+    color: #848282;
+    width: 100%;
+    height:100%;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
+.form-wrapper .map-form .input_field .radio{
+    display: inline-block;
+    margin-left: 8%;
+    position: relative;
+    margin-left: 80px;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -10px;
+    position: relative;
     
 }
